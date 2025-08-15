@@ -8,4 +8,7 @@ export class Report {
     @Column()
     price: number;
 
+    @Column()
+    value: number;
+
 }
