@@ -6,3 +6,6 @@ Content-Type: application/json
     "email": "abc@gmail.com",
     "password": "123"
 }
+
+### get user
+GET  http://localhost:3000/auth/1
