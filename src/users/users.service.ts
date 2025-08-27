@@ -20,8 +20,8 @@ export class UsersService {
         
     }
     
-    find(email: string){
-        return this.repo.find({ where:{email} });    
+    async find(email: string){
+        return await this.repo.find({ where: { email } });    
     }
     
     async update(id: number, attrs: Partial<User>){
