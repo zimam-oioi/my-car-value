@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { plainToClass } from 'class-transformer';
 
-export class SelerializeInterceptor implements NestInterceptor{
+export class SerializeInterceptor implements NestInterceptor{
     intercept(context: ExecutionContext, handler: CallHandler): Observable<any> {
         // run something before req is handled
         // by the req handler 
