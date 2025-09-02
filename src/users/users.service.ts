@@ -6,7 +6,7 @@ import { User } from './user.entity';
 @Injectable()
 export class UsersService {
     constructor(@InjectRepository(User) private repo: Repository<User>){}
-    // using async await for db calls
+
     async create(email: string, password: string){
        
         const user = this.repo.create({email, password}); 

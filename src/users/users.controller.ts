@@ -32,7 +32,7 @@ export class UsersController {
         console.log(id)
         return this.userService.remove(parseInt(id));
     }
-// updating user
+
     @Patch(':id')
     updateUser(@Param('id') id: string, @Body() body: UpdateUserDto){
         return this.userService.update(parseInt(id), body);
